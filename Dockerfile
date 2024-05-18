@@ -1,10 +1,6 @@
 FROM ubuntu:20.04
 
-RUN apt-get update
-
-RUN apt-get install -y nginx
-
-RUN apt-get install -y php-fpm
+RUN apt-get update && apt-get install -y nginx && apt-get install -y php-fpm && rm -rf /var/lib/apt/lists/*
 
 COPY nginx /etc/nginx
 

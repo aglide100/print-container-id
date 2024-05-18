@@ -2,9 +2,9 @@
 <body>
 
 <?php
-$host=gethostname();
-echo "check different container name : ";
-echo $host;
+    $host=gethostname();
+    echo "container id : ";
+    echo $host;
 ?>
 
 </body>
